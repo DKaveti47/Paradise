@@ -12,12 +12,12 @@
 		4905709A1F1BF3E700F5B01B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 490570981F1BF3E700F5B01B /* Main.storyboard */; };
 		4905709C1F1BF3E700F5B01B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4905709B1F1BF3E700F5B01B /* Assets.xcassets */; };
 		4905709F1F1BF3E700F5B01B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4905709D1F1BF3E700F5B01B /* LaunchScreen.storyboard */; };
-		490570A71F1BF4AC00F5B01B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 490570A61F1BF4AC00F5B01B /* GoogleService-Info.plist */; };
 		490B3BFE1F1C023E0082F17F /* UserObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B3BFD1F1C023E0082F17F /* UserObject.swift */; };
 		490B3C001F1C0ECD0082F17F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B3BFF1F1C0ECD0082F17F /* DateHelper.swift */; };
 		490B3C021F1C11060082F17F /* CreateUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B3C011F1C11060082F17F /* CreateUserVC.swift */; };
 		490B3C041F1C112B0082F17F /* RewardsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490B3C031F1C112B0082F17F /* RewardsVC.swift */; };
 		490B3C061F1C271A0082F17F /* Paradise.png in Resources */ = {isa = PBXBuildFile; fileRef = 490B3C051F1C271A0082F17F /* Paradise.png */; };
+		490B3C081F1C39EB0082F17F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 490B3C071F1C39EB0082F17F /* GoogleService-Info.plist */; };
 		6252349F18C8BF234C37E717 /* Pods_Rewards.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B970AD90E4D51F15B5B24F /* Pods_Rewards.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,12 +29,12 @@
 		4905709B1F1BF3E700F5B01B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4905709E1F1BF3E700F5B01B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		490570A01F1BF3E700F5B01B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		490570A61F1BF4AC00F5B01B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		490B3BFD1F1C023E0082F17F /* UserObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserObject.swift; sourceTree = "<group>"; };
 		490B3BFF1F1C0ECD0082F17F /* DateHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
 		490B3C011F1C11060082F17F /* CreateUserVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateUserVC.swift; sourceTree = "<group>"; };
 		490B3C031F1C112B0082F17F /* RewardsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RewardsVC.swift; sourceTree = "<group>"; };
 		490B3C051F1C271A0082F17F /* Paradise.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Paradise.png; sourceTree = "<group>"; };
+		490B3C071F1C39EB0082F17F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7F5118B332C4A68267E50519 /* Pods-Rewards.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rewards.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rewards/Pods-Rewards.debug.xcconfig"; sourceTree = "<group>"; };
 		C3B970AD90E4D51F15B5B24F /* Pods_Rewards.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rewards.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E271CC6E149BBC26EF480ED5 /* Pods-Rewards.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rewards.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rewards/Pods-Rewards.release.xcconfig"; sourceTree = "<group>"; };
@@ -80,8 +80,8 @@
 				490B3BFD1F1C023E0082F17F /* UserObject.swift */,
 				490B3BFF1F1C0ECD0082F17F /* DateHelper.swift */,
 				490570981F1BF3E700F5B01B /* Main.storyboard */,
-				490570A61F1BF4AC00F5B01B /* GoogleService-Info.plist */,
 				4905709B1F1BF3E700F5B01B /* Assets.xcassets */,
+				490B3C071F1C39EB0082F17F /* GoogleService-Info.plist */,
 				490B3C051F1C271A0082F17F /* Paradise.png */,
 				4905709D1F1BF3E700F5B01B /* LaunchScreen.storyboard */,
 				490570A01F1BF3E700F5B01B /* Info.plist */,
@@ -169,8 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4905709F1F1BF3E700F5B01B /* LaunchScreen.storyboard in Resources */,
-				490570A71F1BF4AC00F5B01B /* GoogleService-Info.plist in Resources */,
 				490B3C061F1C271A0082F17F /* Paradise.png in Resources */,
+				490B3C081F1C39EB0082F17F /* GoogleService-Info.plist in Resources */,
 				4905709C1F1BF3E700F5B01B /* Assets.xcassets in Resources */,
 				4905709A1F1BF3E700F5B01B /* Main.storyboard in Resources */,
 			);

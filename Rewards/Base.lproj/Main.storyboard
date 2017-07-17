@@ -22,6 +22,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="backgroundbanner" translatesAutoresizingMaskIntoConstraints="NO" id="pfG-Qa-uvj">
+                                <rect key="frame" x="0.0" y="64" width="1024" height="87"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paradise" translatesAutoresizingMaskIntoConstraints="NO" id="VBf-kA-3aF">
                                 <rect key="frame" x="0.0" y="158" width="1024" height="370"/>
                                 <constraints>
@@ -29,7 +33,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Rewards " textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xMx-TQ-VNR">
-                                <rect key="frame" x="20" y="121" width="501" height="30"/>
+                                <rect key="frame" x="20" y="112" width="501" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="501" id="4Q6-j8-iAs"/>
                                 </constraints>
@@ -38,7 +42,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pnh-9P-tVs">
-                                <rect key="frame" x="536" y="121" width="151" height="30"/>
+                                <rect key="frame" x="536" y="112" width="151" height="30"/>
                                 <color key="backgroundColor" red="0.85530453920000005" green="0.01191815827" blue="0.1277166307" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="151" id="Fn9-JH-wz4"/>
@@ -57,7 +61,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY8-hr-55f">
-                                <rect key="frame" x="708" y="121" width="166" height="30"/>
+                                <rect key="frame" x="708" y="112" width="166" height="30"/>
                                 <color key="backgroundColor" red="0.8553045392036438" green="0.011918158270418644" blue="0.12771663069725037" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hl1-aU-Gok"/>
@@ -76,7 +80,7 @@
                                 </connections>
                             </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="31K-xf-iAx">
-                                <rect key="frame" x="20" y="85" width="501" height="29"/>
+                                <rect key="frame" x="20" y="76" width="501" height="29"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="efM-vA-XbS"/>
@@ -92,7 +96,7 @@
                                 </connections>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-pd-Dms">
-                                <rect key="frame" x="480" y="120" width="36" height="30"/>
+                                <rect key="frame" x="480" y="111" width="36" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Bmv-o7-KrM"/>
                                     <constraint firstAttribute="width" constant="36" id="q9k-LK-8wi"/>
@@ -157,14 +161,14 @@
                             <constraint firstItem="31K-xf-iAx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1qO-Yr-5Vk"/>
                             <constraint firstItem="5gR-kG-5uj" firstAttribute="top" secondItem="VBf-kA-3aF" secondAttribute="bottom" constant="1" id="29p-lM-rjR"/>
                             <constraint firstItem="Pnh-9P-tVs" firstAttribute="leading" secondItem="xMx-TQ-VNR" secondAttribute="trailing" constant="15" id="2Io-cC-XPn"/>
-                            <constraint firstItem="31K-xf-iAx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="7HD-7f-n8C"/>
+                            <constraint firstItem="31K-xf-iAx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="12" id="7HD-7f-n8C"/>
                             <constraint firstItem="xMx-TQ-VNR" firstAttribute="top" secondItem="31K-xf-iAx" secondAttribute="bottom" constant="8" id="BPX-tb-RKi"/>
                             <constraint firstAttribute="trailing" secondItem="VBf-kA-3aF" secondAttribute="trailing" id="C6Y-3a-KVD"/>
                             <constraint firstAttribute="trailing" secondItem="5gR-kG-5uj" secondAttribute="trailing" id="Jql-6j-utP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5gR-kG-5uj" secondAttribute="bottom" id="LYX-Hn-RcO"/>
                             <constraint firstItem="VBf-kA-3aF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Mrb-9O-Odq"/>
                             <constraint firstAttribute="trailing" secondItem="VBf-kA-3aF" secondAttribute="trailing" id="NiN-xZ-Rlx"/>
-                            <constraint firstItem="VBf-kA-3aF" firstAttribute="top" secondItem="xMx-TQ-VNR" secondAttribute="bottom" constant="7" id="Sx7-5P-Lb9"/>
+                            <constraint firstItem="VBf-kA-3aF" firstAttribute="top" secondItem="xMx-TQ-VNR" secondAttribute="bottom" constant="16" id="Sx7-5P-Lb9"/>
                             <constraint firstItem="Pnh-9P-tVs" firstAttribute="leading" secondItem="p3e-pd-Dms" secondAttribute="trailing" constant="20" id="ahE-1O-fmY"/>
                             <constraint firstItem="EY8-hr-55f" firstAttribute="centerY" secondItem="Pnh-9P-tVs" secondAttribute="centerY" id="cRN-Ts-AJV"/>
                             <constraint firstItem="5gR-kG-5uj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ebc-kz-Otv"/>
@@ -172,7 +176,7 @@
                             <constraint firstItem="VBf-kA-3aF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fgc-tU-tYp"/>
                             <constraint firstItem="xMx-TQ-VNR" firstAttribute="centerX" secondItem="31K-xf-iAx" secondAttribute="centerX" id="hIK-fW-SjX"/>
                             <constraint firstItem="p3e-pd-Dms" firstAttribute="centerY" secondItem="xMx-TQ-VNR" secondAttribute="centerY" constant="-1" id="j7j-vJ-Cxw"/>
-                            <constraint firstItem="VBf-kA-3aF" firstAttribute="top" secondItem="xMx-TQ-VNR" secondAttribute="bottom" constant="7" id="qLQ-hz-63A"/>
+                            <constraint firstItem="VBf-kA-3aF" firstAttribute="top" secondItem="xMx-TQ-VNR" secondAttribute="bottom" constant="16" id="qLQ-hz-63A"/>
                             <constraint firstItem="Pnh-9P-tVs" firstAttribute="centerY" secondItem="xMx-TQ-VNR" secondAttribute="centerY" id="qdR-OH-Ygd"/>
                             <constraint firstItem="5gR-kG-5uj" firstAttribute="top" secondItem="VBf-kA-3aF" secondAttribute="bottom" constant="1" id="xBf-BY-4FG"/>
                         </constraints>
@@ -452,6 +456,7 @@
     <resources>
         <image name="65paneer" width="1500" height="1000"/>
         <image name="Paradise" width="1410" height="456"/>
+        <image name="backgroundbanner" width="2000" height="1000"/>
         <image name="chicken" width="1500" height="1000"/>
         <image name="icon_rewards" width="220" height="220"/>
         <image name="kabab" width="1000" height="1500"/>
