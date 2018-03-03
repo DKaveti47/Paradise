@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class ViewController: UIViewController {
+class ViewController: UIViewController,UITextFieldDelegate {
     var ref:DatabaseReference!
     var userObj:UserObject!
     @IBOutlet weak var checkinTextFld: UITextField!
@@ -39,7 +39,8 @@ class ViewController: UIViewController {
     @IBAction func didTapOnSignUp(_ sender: Any) {
         self.view.endEditing(true)
         let someVC = self.storyboard?.instantiateViewController(withIdentifier: "CreateUserVC") as! CreateUserVC
-        self.navigationController?.pushViewController(someVC, animated: true)
+        //self.navigationController?.pushViewController(someVC, animated: true)
+        self.present(someVC, animated: true, completion: {})
         
     }
     
@@ -51,9 +52,10 @@ class ViewController: UIViewController {
     @IBAction func didTapOnSegment(_ sender: Any) {
         self.view.endEditing(true)
          selectedSegment = segmentBar.selectedSegmentIndex
+        checkinTextFld.text = ""
         setLblIndicatorText()
-    
     }
+    
     @IBAction func didTapOnCheckin(_ sender: Any) {
         self.view.endEditing(true)
         if checkinTextFld.text?.characters.count == 0 {
@@ -74,6 +76,25 @@ class ViewController: UIViewController {
             self.checkinTextFld.placeholder = "Enter Your Email Address"
         }
     }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        if selectedSegment == 0 {
+            textField.resignFirstResponder()
+        }
+    }
+    
+    @IBAction func didTapOnNumber(_ sender: UIButton) {
+        if checkinTextFld.text == nil || (checkinTextFld.text?.count)! < 10 {
+            checkinTextFld.text! += "\(sender.tag)"
+        }
+    }
+    
+    @IBAction func didTapOnDelete(_ sender: UIButton) {
+        if (checkinTextFld.text?.count)! > 0 {
+            checkinTextFld.text = String(checkinTextFld.text!.dropLast())
+        }
+    }
+    
 
 }
 
@@ -90,7 +111,7 @@ extension ViewController{
             }
             for snap in snapshot.children {
                 self.userObj = UserObject()
-               self.userObj.convertDictToObj(dict: (snap as! DataSnapshot).value as! [String : Any])
+                self.userObj.convertDictToObj(dict: (snap as! DataSnapshot).value as! [String : Any])
                 break
             }
         })

@@ -71,9 +71,17 @@ class CreateUserVC: UIViewController,UITextFieldDelegate {
                     "rewards":10
                     ] as [String : Any]
                 newBookRef.setValue(newBookData)
+                DispatchQueue.main.async {
+                    self.dismiss(animated: true, completion: {})
+                }
             }
         }
     }
+    
+    @IBAction func didTapOnClose(_ sender: Any) {
+        self.dismiss(animated: true, completion: {})
+    }
+    
 
     /*
     // MARK: - Navigation
@@ -108,5 +116,7 @@ extension String {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: self)
     }
+    
+    
 
 }
